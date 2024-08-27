@@ -1,0 +1,100 @@
+*{
+    font-family:Calibri;
+}
+body {
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    background-color: #18202e;
+}
+
+header {
+    padding: 2px 10px;
+    border-bottom: 5px solid #f73859;
+    background-color: #18202e;
+}
+
+footer{
+    background-color:#c4edde;
+    padding: 20px;
+    margin-top: 800px;
+    border-top:5px solid #f73859;
+}
+footer p{
+    color:#222e42;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.brand a img{
+    display: flex;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.cart img {
+    height: 25px; 
+    margin-left: 440px;
+    margin-right: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #c4edde;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.user{
+    display: flex;
+    text-indent: 10px;
+}
+.login a,.signup a{
+    text-decoration: none;
+}
+.phone a{
+    text-decoration: none;
+}
+.social_media{
+    display: flex;
+    margin: 0;
+}
+.social_media div{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.social_media div a img{
+    width: 40px;
+}
+.sun{
+    float: right;
+    width: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#flex-container {
+    display: flex;
+    border: 0px solid white;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 10px;
+    margin-left: 10%;
+    width: 80%;
+    min-height: 300px;
+    flex-wrap: wrap;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
