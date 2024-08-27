@@ -1,5 +1,5 @@
 const container = document.getElementById("flex-container")
-numberOfElements = 20
+numberOfElements = 24
 
 for (let i = 0; i < numberOfElements; i++) {
     // Create a new div element
