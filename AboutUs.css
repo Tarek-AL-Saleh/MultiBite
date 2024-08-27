@@ -2,7 +2,7 @@
     font-family:Calibri;
 }
 body {
-    background-image: url(Resources/Images/ABOUT\ US\ PAGE.png);
+    background-image: url(Resources/Images/ABOUT-US-PAGE.png);
     background-size:contain;
     margin: 0;
     padding: 0;
@@ -16,9 +16,10 @@ header {
 }
 
 footer{
+    position: relative;
     background-color:#c4edde;
     padding: 20px;
-    margin-top: 700px;
+    margin-top: 280px;
     border-top:5px solid #f73859;
 }
 footer p{
@@ -79,15 +80,100 @@ footer p{
     margin-right: 10px;
     margin-top: 10px;
 }
-.website_link a{
+.website_link{
+    position: absolute;
+    left: 150px;
+    bottom: 57px;
     text-decoration: none;
     font-size: 18px;
     float: left;
-    margin-top:475px;
-    margin-left: 150px;
     color: #c4edde;
     text-transform: uppercase;
     font-weight: bold;
     font-style: oblique;
-    background-color:#18202e
+    background-color:#18202e;
+    animation: zoom3 30s linear infinite;
+}
+.website_link:hover{
+    text-decoration: underline 3px #f73859;
+}
+
+.lamp{
+    width: 190px;
+    margin-top: 12px;
+    margin-left: 769px;
+    animation: zoom1 5s linear infinite;
+}
+.designers{
+    width: 167px;
+    margin-left: 792px;
+    margin-top: 30px;
+    animation: zoom2 5s linear infinite;
+}
+.lastRow{
+    display: flex;
+    list-style: none;
+}
+.pizza{
+    width: 425px;
+    position: absolute;
+    bottom: -375px;
+    left: -60px;
+    transition: transform 0.5s ease-in-out;
+}
+.pizza:hover{
+    animation: rotateInfinite 30s linear infinite;
+}
+
+.plate{
+    width: 580px;
+    position: absolute;
+    bottom: -488px;
+    left:200px;
+}
+.programmers{
+    position: absolute;
+    width: 165px;
+    margin-left: 770px;
+    bottom: -97.5px;
+    animation: zoom1 5s linear infinite;
+}
+
+@keyframes rotateInfinite {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoom1 {
+    0% {
+        transform:scale(1)
+        rotate(0deg)
+    }
+    50% {
+        transform:scale(1.05)
+        rotate(5deg)
+    }
+    100%{
+        transform:scale(1)
+        rotate(0deg)
+    }
+}
+
+@keyframes zoom2 {
+    0% {
+        transform:scale(1)
+        rotate(0deg)
+    }
+    50% {
+        transform:scale(1.05)
+        rotate(-5deg)
+    }
+    100%{
+        transform:scale(1)
+        rotate(0deg)
+    }
 }
