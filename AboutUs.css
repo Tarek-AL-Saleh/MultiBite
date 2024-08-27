@@ -2,7 +2,8 @@
     font-family:Calibri;
 }
 body {
-    background-size:cover;
+    background-image: url(Resources/Images/ABOUT\ US\ PAGE.png);
+    background-size:contain;
     margin: 0;
     padding: 0;
     background-color: #18202e;
@@ -17,7 +18,7 @@ header {
 footer{
     background-color:#c4edde;
     padding: 20px;
-    margin-top: 800px;
+    margin-top: 700px;
     border-top:5px solid #f73859;
 }
 footer p{
@@ -77,4 +78,16 @@ footer p{
     width: 35px;
     margin-right: 10px;
     margin-top: 10px;
+}
+.website_link a{
+    text-decoration: none;
+    font-size: 18px;
+    float: left;
+    margin-top:475px;
+    margin-left: 150px;
+    color: #c4edde;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: oblique;
+    background-color:#18202e
 }
