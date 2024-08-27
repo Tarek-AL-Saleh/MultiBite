@@ -5,7 +5,8 @@ body {
     background-size:cover;
     margin: 0;
     padding: 0;
-    background-color: #18202e;
+    background-image: url("Restaurants Background.png");
+    object-fit: cover;
 }
 
 header {
@@ -97,4 +98,23 @@ footer p{
     height: 150px;
     border: 1px solid white;
     border-radius: 10px;
+    transition: width 0.2s;
+    transition: height 0.2s;
 }
+
+.box:hover{
+
+    width: 130px;
+    height: 130px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box img {
+
+    background: none;
+
+}
+
+
