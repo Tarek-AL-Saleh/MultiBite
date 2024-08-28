@@ -7,43 +7,104 @@
     <link rel="stylesheet" href="Dishes.css">
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <div class="brand">
-                <a href="index.html"><img src="Resources/Images/Asset 2@4x.png" alt="Logo"></a>
+
+    <div class="content-wrapper">
+        <header>
+            <div class="header-top">
+                <div class="brand">
+                    <a href="index.html"><img src="Resources/Images/Asset 2@4x.png" alt="Logo"></a>
+                </div>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="Dishes.html">Deals & Dishes</a>
+                    <a href="Restaurants.html">Restaurants</a>
+                </nav>
+                <div class="cart">
+                    <a href="Cart.html"><img src="Resources/Images/Asset 4@4x.png" alt="Cart"></a>
+                </div>
+                <div class="user">
+                    <div class="login"><a href="https://www.example.com" target="_blank"><img width="70px" src="Resources/Images/SignUp.png" alt="Sign Up"></a></div>
+                    <div class="signup"><a href="https://www.example.com" target="_blank"><img width="70px" src="Resources/Images/Login.png" alt="Log In"></a></div>
+                </div>
             </div>
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="AboutUs.html">About Us</a>
-                <a href="Dishes.html">Deals & Dishes</a>
-                <a href="Restaurants.html">Restaurants</a>
-            </nav>
-            <div class="cart">
-                <a href="Cart.html"><img src="Resources/Images/Asset 4@4x.png" alt="Cart"></a>
+        </header>
+        
+        <main>
+           
+            <!-- Button to trigger the popup -->
+            <button onclick="showPopup()">Show Popup</button>
+
+            <script src="Dishes.js"></script>
+        </main>
+        
+        <footer>
+            <div>
+                <p class="Copyright">
+                    &copy; Copyright 2024 MultiBite. All Rights Reserved.
+                </p>
+                <p class="mail">
+                    Contact Us: <a href="mailto:support@multibite.com">support@multibite.com</a>
+                </p>
+                <p class="phone">Phone Number: <a href="tel:+96176147496">+961 76 147 496</a></p>
+                <div class="social_media">
+                    <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/Insta_logo.png" alt="Instagram"></a></div>
+                    <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/Asset 5@4x.png" alt="Facebook"></a></div>
+                    <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/twitter-x-logo-42554.png" alt="X/Twitter"></a></div>
+                </div>
             </div>
-            <div class="user">
-                <div class="login"><a href="https://www.example.com" target="_blank"><img width="70px" src="Resources/Images/SignUp.png" alt="Sign Up"></a></div>
-                <div class="signup"><a href="https://www.example.com" target="_blank"><img width="70px" src="Resources/Images/Login.png" alt="Log In"></a></div>
-            </div>
+        </footer>
+    </div>
+
+    <div id="popup">
+        <button id="closePopup" onclick="closePopup()">X</button>
+        <div style="display: flex;">
+            <h2 id="popupHeader">Restaurant Name</h2>
         </div>
-    </header>
-  
-    
-    <footer>
-        <div>
-            <p class="Copyright">
-                &copy; Copyright 2024 MultiBite. All Rights Reserved.
-            </p>
-            <p class="mail">
-                Contact Us: <a href="mailto: support@multibite.com">support@multibite.com</a>
-            </p>
-            <p class="phone">Phone Number: <a href="tel:+96176147496">+961 76 147 496</a></p>
-            <div class="social_media">
-                <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/Insta_logo.png" alt="Instagram"></a></div>
-                <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/Asset 5@4x.png" alt="Facebook"></a></div>
-                <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/twitter-x-logo-42554.png" alt="X/Twitter"></a></div>
+
+        <div style="margin-top: -5%; padding: 0px;">
+            <img id= "popupImage" src="DishExample.jpg" alt="">
+            <div id="dataContainer">
+                <h1>Dish Name</h1>
+                <div id="descBox">
+
+                    <b><p style="font-size: 90%;float:center;color:#a4a2a3;">This dish features succulent shrimp, perfectly seared and tossed in a rich garlic butter sauce with a hint of spice. The shrimp are cooked until golden and tender, with the garlic butter sauce infusing them with a deep, savory flavor. A touch of red pepper flakes adds just the right amount of heat, balancing the richness of the butter. The dish is served over a bed of fragrant lemon rice, which adds a zesty, refreshing contrast to the bold flavors of the shrimp. Garnished with fresh parsley and a squeeze of lemon, this dish is a delightful blend of savory, spicy, and citrusy flavors.
+                    </p></b>
+                </div>
+                <br>
+                <hr style="width:70%">
+                <div style="flex-direction: row; display: flex;">
+                    
+                    <!-- Aligns item to left-->
+                    <div style="padding-left: 30px;display: flex;width:50%;align-items: start;flex-direction: column;">
+
+                        <p id="restaurantLocation">Restaurant Location</p>
+                        <p id="time" style="margin-top: -10px;">30 min</p>
+
+                        <div id="dishCounter">
+                            <button onclick="increaseNumber()" style="border-radius: 10px 0px 0px 10px;; margin-right:5px;float:right;">+</button>
+                            <p id="counterText">1</p>
+                            <button onclick="decreaseNumber()" style="border-radius: 0px 10px 10px 0px; margin-left: 5px;float:left;">-</button>    
+                        </div>
+
+                    </div>
+                    
+                    <!-- Aligns item to right-->
+                    <div style="display: flex;width:50%;flex-direction: column;">
+
+                        <b><p style="font-size: 20px;">50.00 <span>$</span></p></b> 
+                        <button id="addToCart">ADD TO CART</button>
+
+                    </div>
+
+                </div>
+                
             </div>
+            
         </div>
-    </footer>
+        
+        
+    </div>
+    <script>showPopup()</script>
 </body>
 </html>
