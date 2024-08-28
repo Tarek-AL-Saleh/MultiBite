@@ -1,5 +1,5 @@
-*{
-    font-family:Calibri;
+* {
+    font-family: Calibri;
 }
 
 header {
@@ -8,14 +8,131 @@ header {
     background-color: #18202e;
 }
 
-footer{
-    background-color:#c4edde;
+.middle h2 {
+    color: #c4edde;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.container h5 {
+    margin-left: 190px;
+    font-size: 15px;
+    font-style: bold;
+    color: #d52142;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 20px;
+}
+
+.card img {
+    padding: 30px;
+}
+
+.card button {
+    color: #c4edde;
+    background-color: #18202e;
+    margin-top: -100px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    border-radius: 14px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.middle .container p {
+    text-align: center;
+    color: #18202e;
+    height: 10px;
+    float: center;
+}
+
+.name {
+    float: center;
+    margin-bottom: 10px;
+
+}
+
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+.wrapper {
+    margin-left: 190px;
+    margin-top: -20px;
+    background: #c4edde;
+    border-radius: 7px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.wrapper span.num {
+    font-size: 10px;
+    border-right: 0.5px solid rgba(138, 131, 131, 0.808);
+    border-left: 0.5px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+
+
+
+.food-items img {
+    padding: inherit;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #c4edde;
     padding: 20px;
     margin-top: 800px;
-    border-top:5px solid #f73859;
+    border-top: 5px solid #f73859;
 }
-footer p{
-    color:#222e42;
+
+footer p {
+    color: #222e42;
     font-weight: bold;
     font-size: 18px;
 }
@@ -25,29 +142,31 @@ footer p{
     align-items: center;
 }
 
-.brand a img{
+.brand a img {
     display: flex;
     height: 70px;
     margin-left: 10px;
     margin-right: 30px;
     transition: scale 0.3s;
 }
-.brand a img:hover{
+
+.brand a img:hover {
     scale: 1.05;
 }
 
 .cart img {
     position: absolute;
-    height: 25px; 
+    height: 25px;
     right: 240px;
     top: 24px;
     transition: scale 0.3s;
 }
-.cart img:hover{
+
+.cart img:hover {
     scale: 1.1;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     color: #c4edde;
     margin-right: 18px;
@@ -55,49 +174,54 @@ footer p{
     text-transform: uppercase;
     transition: color 0.3s;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     font-size: 18px;
     color: #f73859;
     text-transform: uppercase;
 }
 
-.user{
+.user {
     display: flex;
     text-indent: 10px;
 }
 
-.login button,.signup button{
-   width: 70px;
-   height: 30px;
-   position: absolute;
-   font-size: 15px;
-   border-radius: 20px;
-   border: 0px;
-   color:#18202e;
+.login button,
+.signup button {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 0px;
+    color: #18202e;
 }
-.login button{
+
+.login button {
     background-color: #c4edde;
     right: 30px;
     top: 24px;
     transition: color 0.3s;
     transition: scale 0.3s;
 }
-.login button:hover{
+
+.login button:hover {
     color: #FFFFFF;
-    background-color:#37b4ba;
+    background-color: #37b4ba;
     border: 2px solid #37b4ba;
     scale: 1.05;
     font-size: 16px;
 }
 
-.signup button{
-    background-color:#f73859;
+.signup button {
+    background-color: #f73859;
     right: 110px;
     top: 24px;
     transition: color 0.3s;
     transition: scale 0.3s;
 }
-.signup button:hover{
+
+.signup button:hover {
     color: #ffffff;
     background-color: #d52142;
     border: 2px solid #d52142;
@@ -105,20 +229,24 @@ footer p{
     font-size: 16px;
 }
 
-.phone a{
+.phone a {
     text-decoration: none;
 }
-.social_media{
+
+.social_media {
     display: flex;
     margin: 0;
 }
-.social_media div{
+
+.social_media div {
     margin-right: 20px;
     margin-left: 5px;
 }
-.social_media div a img{
+
+.social_media div a img {
     width: 40px;
 }
-body{
+
+body {
     background-color: #18202e;
 }
