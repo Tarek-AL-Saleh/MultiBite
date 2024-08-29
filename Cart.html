@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MultiBite</title>
-    <link rel="stylesheet" href="Cart.css">
-</head>
-
-<body>
-
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MultiBite</title>
+        <link rel="stylesheet" href="Cart.css">
+        <script src="https://kit.fontawesome.com/b0390096a2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
         <header>
             <div class="header-top">
                 <div class="brand">
@@ -33,60 +30,87 @@
         </header>
 
         <main>
-
             <div class="cart-container">
                 <!-- Cart Section -->
                 <div class="cart">
                     <div class="cart-header">
-                        <h2>Cart</h2>
+                        <img src="Resources/Images/Cart Logo.png" alt="Cart logo">
                     </div>
                     <div class="cart-items">
                         <!-- Cart Item -->
-                        <div class="cart-item">
-                            <img src="pizza.jpg" alt="BBQ Chicken Pizza">
-                            <div class="item-info">
+                        <div class="cart-item1">
+                            <img src="Resources/Images/Pizza.png" alt="BBQ Chicken Pizza">
+                            <div class="item-info1">
                                 <h3>BBQ CHICKEN PIZZA</h3>
                             </div>
                             <div class="item-actions">
                                 <button>-</button>
                                 <button>+</button>
                             </div>
+                        </div> 
+                        <div class="cart-item2">
+                            <img src="Resources/Images/plate1.png" alt="SUSHI">
+                            <div class="item-info2">
+                                <h3>SUSHI</h3>
+                            </div>
+                            <div class="item-actions">
+                                <button>-</button>
+                                <button>+</button>
+                            </div>
                         </div>
-                        
+                        <div class="cart-item3">
+                            <img src="Resources/Images/Plate2.png" alt="BBQ Chicken Pizza">
+                            <div class="item-info3">
+                                <h3>CROISSANT</h3>
+                            </div>
+                            <div class="item-actions">
+                                <button>-</button>
+                                <button>+</button>
+                            </div>
+                        </div>
                     </div>
                     <!-- Special Request -->
+                    <!-- Special Request -->
                     <div class="special-request">
-                        <input type="text" placeholder="any special request?">
-                    </div>
+                        <span><i class="fa-regular fa-comment-dots"></i>
+                            <input type="text" placeholder="any special request?">
+                        </span>
+                    </div>
                     <!-- Price Summary -->
                     <div class="price-summary">
-                        <p>Subtotal <span></span></p>
-                        <p>Delivery fee <span></span></p>
-                        <p>Total amount <span></span></p>
-                    </div>
+                        <p>Subtotal<span>65$</span></p>
+                        <p>Delivery fee <span>15$</span></p>
+                        <p>Total amount <span>80$</span></p>
+                    </div>
                     <!-- Checkout and Add More Buttons -->
                     <div class="action-buttons">
                         <button class="checkout">checkout</button>
                         <button class="add-more">add more</button>
                     </div>
                 </div>
-        
                 <!-- Recommendations Section -->
                 <div class="recommendations">
                     <h2>Other recommended dishes</h2>
                     <div class="recommended-items">
                         <!-- Recommended Item -->
-                        <div class="recommended-item">
-                            <img src="spaghetti.jpg" alt="Spaghetti Bologn">
-                            <button class="add-to-cart">+</button>
+                        <div class="recommended-item1">
+                            <img src="photo/foodimage_2.jpg" alt="Spaghetti Bologn">
+                            <button class="addtocart1">Add To Cart</button>
+                        </div>
+                        <div class="recommended-item2">
+                            <img src="photo/foodimage_0.jpg" alt="Spaghetti Bologn">
+                            <button class="addtocart2">Add To Cart</button>
+                        </div>
+                        <div class="recommended-item3">
+                            <img src="photo/foodimage_1.jpg" alt="Spaghetti Bologn">
+                            <button class="addtocart3">Add To Cart</button>
                         </div>
                         <!-- Repeat for other items -->
                     </div>
                 </div>
             </div>
-
         </main>
-       
+        
         <footer>
             <div>
                 <p class="Copyright">
@@ -106,14 +130,5 @@
                 </div>
             </div>
         </footer>
-   
-
-    
-
-
-
-
-
-</body>
-
+    </body>
 </html>
