@@ -1,0 +1,226 @@
+*{
+    font-family:Calibri;
+}
+body {
+    background-image: url(Resources/Images/ABOUT-US-PAGE.png);
+    background-size:contain;
+    margin: 0;
+    padding: 0;
+    background-color: #18202e;
+}
+
+header {
+    padding: 2px 10px;
+    border-bottom: 5px solid #f73859;
+    background-color: #18202e;
+}
+
+footer{
+    position: relative;
+    background-color:#c4edde;
+    padding: 20px;
+    margin-top: 280px;
+    border-top:5px solid #f73859;
+}
+footer p{
+    color:#222e42;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.brand a img{
+    display: flex;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 30px;
+    transition: scale 0.3s;
+}
+.brand a img:hover{
+    scale: 1.05;
+}
+
+.cart img {
+    position: absolute;
+    height: 25px; 
+    right: 240px;
+    top: 24px;
+    transition: scale 0.3s;
+}
+.cart img:hover{
+    scale: 1.1;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #c4edde;
+    margin-right: 18px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+.navbar a:hover{
+    font-size: 18px;
+    color: #f73859;
+    text-transform: uppercase;
+}
+
+.user{
+    display: flex;
+    text-indent: 10px;
+}
+
+.login button,.signup button{
+   width: 70px;
+   height: 30px;
+   position: absolute;
+   font-size: 15px;
+   border-radius: 20px;
+   border: 0px;
+   color:#18202e;
+}
+.login button{
+    background-color: #c4edde;
+    right: 30px;
+    top: 24px;
+    transition: color 0.3s;
+    transition: scale 0.3s;
+}
+.login button:hover{
+    color: #FFFFFF;
+    background-color:#37b4ba;
+    border: 2px solid #37b4ba;
+    scale: 1.05;
+    font-size: 16px;
+}
+
+.signup button{
+    background-color:#f73859;
+    right: 110px;
+    top: 24px;
+    transition: color 0.3s;
+    transition: scale 0.3s;
+}
+.signup button:hover{
+    color: #ffffff;
+    background-color: #d52142;
+    border: 2px solid #d52142;
+    scale: 1.05;
+    font-size: 16px;
+}
+
+.phone a{
+    text-decoration: none;
+}
+.social_media{
+    display: flex;
+    margin: 0;
+}
+.social_media div{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.social_media div a img{
+    width: 40px;
+}
+.website_link{
+    position: absolute;
+    left: 150px;
+    bottom: 57px;
+    text-decoration: none;
+    font-size: 18px;
+    float: left;
+    color: #c4edde;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: oblique;
+    background-color:#18202e;
+    animation: zoom3 30s linear infinite;
+}
+.website_link:hover{
+    text-decoration: underline 3px #f73859;
+}
+
+.lamp{
+    width: 190px;
+    margin-top: 12px;
+    margin-left: 769px;
+    animation: zoom1 5s linear infinite;
+}
+.designers{
+    width: 167px;
+    margin-left: 792px;
+    margin-top: 30px;
+    animation: zoom2 5s linear infinite;
+}
+.lastRow{
+    display: flex;
+    list-style: none;
+}
+.pizza{
+    width: 425px;
+    position: absolute;
+    bottom: -375px;
+    left: -60px;
+    transition: transform 0.5s ease-in-out;
+}
+.pizza:hover{
+    animation: rotateInfinite 30s linear infinite;
+}
+
+.plate{
+    width: 580px;
+    position: absolute;
+    bottom: -488px;
+    left:200px;
+}
+.programmers{
+    position: absolute;
+    width: 165px;
+    margin-left: 770px;
+    bottom: -97.5px;
+    animation: zoom1 5s linear infinite;
+}
+
+@keyframes rotateInfinite {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoom1 {
+    0% {
+        transform:scale(1)
+        rotate(0deg)
+    }
+    50% {
+        transform:scale(1.05)
+        rotate(5deg)
+    }
+    100%{
+        transform:scale(1)
+        rotate(0deg)
+    }
+}
+
+@keyframes zoom2 {
+    0% {
+        transform:scale(1)
+        rotate(0deg)
+    }
+    50% {
+        transform:scale(1.05)
+        rotate(-5deg)
+    }
+    100%{
+        transform:scale(1)
+        rotate(0deg)
+    }
+}
