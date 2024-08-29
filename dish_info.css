@@ -38,10 +38,20 @@ footer p{
     margin-right: 30px;
 }
 
+.brand a img:hover{
+    scale: 1.05;
+}
+
 .cart img {
+    position: absolute;
     height: 25px; 
-    margin-left: 440px;
-    margin-right: 50px;
+    right: 240px;
+    top: 24px;
+    transition: scale 0.3s;
+}
+
+.cart img:hover{
+    scale: 1.1;
 }
 
 .navbar a{
@@ -49,6 +59,52 @@ footer p{
     color: #c4edde;
     margin-right: 20px;
     font-size: 17px;
+}
+
+.navbar a:hover{
+    font-size: 18px;
+    color: #f73859;
+    text-transform: uppercase;
+}
+
+.login button,.signup button{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 0px;
+    color:#18202e;
+ }
+
+ .login button{
+    background-color: #c4edde;
+    right: 30px;
+    top: 24px;
+    transition: color 0.3s;
+    transition: scale 0.3s;
+}
+.login button:hover{
+    color: #FFFFFF;
+    background-color:#37b4ba;
+    border: 2px solid #37b4ba;
+    scale: 1.05;
+    font-size: 16px;
+}
+
+.signup button{
+    background-color:#f73859;
+    right: 110px;
+    top: 24px;
+    transition: color 0.3s;
+    transition: scale 0.3s;
+}
+.signup button:hover{
+    color: #ffffff;
+    background-color: #d52142;
+    border: 2px solid #d52142;
+    scale: 1.05;
+    font-size: 16px;
 }
 
 .user{
