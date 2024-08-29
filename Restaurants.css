@@ -2,10 +2,11 @@
     font-family:Calibri;
 }
 body {
-    background-size:cover;
+    background-size:contain;
     margin: 0;
     padding: 0;
-    background-color: #18202e;
+    background-image: url("Restaurants Background.png");
+    object-fit: cover;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
 footer{
     background-color:#c4edde;
     padding: 20px;
-    margin-top: 800px;
+    margin-top: 300px;
     border-top:5px solid #f73859;
 }
 footer p{
@@ -36,28 +37,82 @@ footer p{
     height: 70px;
     margin-left: 10px;
     margin-right: 30px;
+    transition: scale 0.3s;
+}
+.brand a img:hover{
+    scale: 1.05;
 }
 
 .cart img {
+    position: absolute;
     height: 25px; 
-    margin-left: 440px;
-    margin-right: 50px;
+    right: 240px;
+    top: 24px;
+    transition: scale 0.3s;
+}
+.cart img:hover{
+    scale: 1.1;
 }
 
 .navbar a{
     text-decoration: none;
     color: #c4edde;
-    margin-right: 20px;
-    font-size: 17px;
+    margin-right: 18px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    transition: color 0.3s;
+}
+.navbar a:hover{
+    font-size: 18px;
+    color: #f73859;
+    text-transform: uppercase;
 }
 
 .user{
     display: flex;
     text-indent: 10px;
 }
-.login a,.signup a{
-    text-decoration: none;
+
+.login button,.signup button{
+   width: 70px;
+   height: 30px;
+   position: absolute;
+   font-size: 15px;
+   border-radius: 20px;
+   border: 0px;
+   color:#18202e;
 }
+.login button{
+    background-color: #c4edde;
+    right: 30px;
+    top: 24px;
+    transition: color 0.3s;
+    transition: scale 0.3s;
+}
+.login button:hover{
+    color: #FFFFFF;
+    background-color:#37b4ba;
+    border: 2px solid #37b4ba;
+    scale: 1.05;
+    font-size: 16px;
+}
+
+.signup button{
+    background-color:#f73859;
+    right: 110px;
+    top: 24px;
+    transition: color 0.3s;
+    transition: scale 0.3s;
+}
+.signup button:hover{
+    color: #ffffff;
+    background-color: #d52142;
+    border: 2px solid #d52142;
+    scale: 1.05;
+    font-size: 16px;
+}
+
 .phone a{
     text-decoration: none;
 }
@@ -72,13 +127,11 @@ footer p{
 .social_media div a img{
     width: 40px;
 }
-.sun{
-    float: right;
-    width: 35px;
-    margin-right: 10px;
-    margin-top: 10px;
+.sentence{
+    color: #c4edde;
+    text-align: center;
+    font-size: 28px;
 }
-
 #flex-container {
     display: flex;
     border: 0px solid white;
@@ -93,8 +146,22 @@ footer p{
 }
 
 .box{
-    width: 100px;
-    height: 100px;
-    border: 1px solid white;
-    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    border: 0px solid white;
+    border-radius: 20px;
+    transition: scale 0.2s;
+}
+
+.box:hover{
+    scale: 1.1;
+    border: 0px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.box img {
+
+    background: none;
+
 }

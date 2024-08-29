@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Info</title>
+    <link rel="stylesheet" href="dish_info.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="brand">
+                <a href="index.html"><img src="Resources/Images/Asset 2@4x.png" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="Dishes.html">Deals & Dishes</a>
+                <a href="Restaurants.html">Restaurants</a>
+            </nav>
+            <div class="cart">
+                <a href="Cart.html"><img src="Resources/Images/Asset 4@4x.png" alt="Cart"></a>
+            </div>
+            <div class="user">
+                <div class="login"><a href="https://www.example.com" target="_blank"><img width="70px" src="Resources/Images/SignUp.png" alt="Sign Up"></a></div>
+                <div class="signup"><a href="https://www.example.com" target="_blank"><img width="70px" src="Resources/Images/Login.png" alt="Log In"></a></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="food-item">
+        <div class="photo">
+            <img src="photo/pasta.jpg" alt="Meat Balls Spaghetti">
+        </div>
+        <div class="content">
+            <h2 id="NAME">Meat Balls Spaghetti</h2>
+            <h4 id="resname">Restaurant Name</h4>
+
+            <div class="big_info">
+            <p id="desc">Delicious meatballs served with spaghetti in a savory sauce.</p>
+            <div class="info">
+                <div>fat <span>-26g</span></div>
+                <div>saturates <span>-10g</span></div>
+                <div>sugar <span>-18g</span></div>
+                <div>salt<span>-10g</span></div>
+                <div>kcal<span>-260</span></div>
+            </div>
+            <br>
+            <div class="details">
+                <h3>time to deliver:30min</h3>
+                <h3>close in 2 hours</h3>
+            </div>
+            </div>
+
+            <h1 id="price">35.50$</h1>
+            <div class="btns">
+                <button onclick="window.location.href = 'Cart.html'" class="btn-de">add to cart</button>
+                <div class="qty">
+                    <span class="minus">-</span>
+                    <span class="num">01</span>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const plus =document.querySelector(".plus"),
+         minus =document.querySelector(".minus"),
+         num =document.querySelector(".num");
+         let a =1 ;
+         plus.addEventListener( "click",()=>{
+            a++;
+            a= (a<100)?"0"+a:a;
+            num.innerText = a;
+            console.log(a);
+         });
+         minus.addEventListener( "click",()=>{
+            a--;
+            a= (a<100)?"0"+a:a;
+            num.innerText = a;
+            console.log(a);
+         });
+
+    </script>
+
+    <footer>
+        <div>
+            <p class="Copyright">
+                &copy; Copyright 2024 MultiBite. All Rights Reserved.
+            </p>
+            <p class="mail">
+                Contact Us: <a href="mailto: support@multibite.com">support@multibite.com</a>
+            </p>
+            <p class="phone">Phone Number: <a href="tel:+96176147496">+961 76 147 496</a></p>
+            <div class="social_media">
+                <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/Insta_logo.png" alt="Instagram"></a></div>
+                <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/Asset 5@4x.png" alt="Facebook"></a></div>
+                <div><a href="https://www.example.com" target="_blank"><img src="Resources/Images/twitter-x-logo-42554.png" alt="X/Twitter"></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

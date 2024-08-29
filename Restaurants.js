@@ -1,5 +1,5 @@
 const container = document.getElementById("flex-container")
-numberOfElements = 20
+numberOfElements = 24
 
 for (let i = 0; i < numberOfElements; i++) {
     // Create a new div element
@@ -7,8 +7,17 @@ for (let i = 0; i < numberOfElements; i++) {
     newDiv.className = "box"
 
     // Add content to the new div
-    newDiv.innerHTML = `<p style='color:white'>This is restaurant number ${i + 1}</p>`;
+    const newImage = document.createElement('img');
+    newImage.src = `restaurant_images/${i}.png`
+    newImage.style.width = "100%";
+    newImage.style.height = "100%";
+    newImage.style.position = "relative";
+    newImage.style.display = "block";
+    // newDiv.innerHTML = `<p style='color:white'>This is restaurant number ${i + 1}</p>`;
 
     // Append the new div to the container
     container.appendChild(newDiv);
+    
+    newDiv.appendChild(newImage);
+    
 }
