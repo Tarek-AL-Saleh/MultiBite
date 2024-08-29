@@ -155,15 +155,15 @@ footer p {
     scale: 1.05;
 }
 
-.cart img {
+.icon-cart img{
     position: absolute;
-    height: 25px;
+    height: 25px; 
     right: 240px;
     top: 24px;
     transition: scale 0.3s;
 }
 
-.cart img:hover {
+.icon-cart img:hover {
     scale: 1.1;
 }
 
@@ -250,6 +250,8 @@ footer p {
 
 body {
     background-color: #18202e;
+    margin: 0;
+    padding: 0;
 }
 
 .addToCart{
@@ -464,3 +466,45 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.search-bar{
+    width: 10%; /* to adjust the width*/
+    height: 15px;/*to adjast th hight*/    
+    margin: 10px auto;
+    background: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 60px;
+     border: 1px solid #f73859;
+     padding: 10px 20px;
+     box-shadow: 0 5px 5px rgba(24, 40, 59, 0.133)  ;
+     float: right;
+     margin-right: 50px;
+  }
+    .search-bar input{
+      background: transparent;
+      flex: 1;
+      border: 0;
+      outline: none;
+      padding: 10px 0px;
+      font-size: 15px;
+      color: #f73859;
+      width: 80%;
+    }
+    ::placeholder{
+      color: #f73859;
+    }
+    .search-bar button img{
+      width: 25px;
+      height: 25px;
+    }
+    .search-bar button{
+      border: 0;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      background: none;
+      cursor: pointer;
+    }
+    

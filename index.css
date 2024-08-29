@@ -121,7 +121,7 @@ footer p{
 }
 
 body {
-    background-image: url(Resources/Images/Home-Page-Background.jpg);
+    background-image: url("Resources/Images/Home-Page-Background.jpg");
     background-size:cover;
     margin: 0;
     padding: 0;
