@@ -132,7 +132,7 @@ body {
     position: absolute;
     width: 200px;
     top: 95px;
-    left: 662px;
+    left: 720px;
     animation: zoom 7s infinite;
 }
 @keyframes zoom {
